@@ -6,3 +6,8 @@
 .sc-ok { color: #9a6700; }
 .sc-poor { color: #cf222e; }
 .sc-delta { font-size: 0.82rem; color: #8a8a8a; }
+
+/* ui-reviewer iter 1: 2-column grid on small screens */
+@media (max-width: 600px) {
+  .sc-grid { grid-template-columns: repeat(2, 1fr); }
+}
