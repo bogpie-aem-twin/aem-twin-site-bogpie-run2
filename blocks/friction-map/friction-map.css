@@ -1,0 +1,6 @@
+.friction-map .friction-row { display: grid; grid-template-columns: 1fr 2fr 1fr 1fr; gap: 0.5rem; padding: 0.5rem; border-bottom: 1px solid #ccc; }
+.friction-map .friction-row.pass { background-color: #e6f4ea; }
+.friction-map .friction-row.fail { background-color: #fde8e8; }
+.friction-map .step { font-weight: bold; }
+.friction-map .status { text-align: center; }
+.friction-map .count { text-align: right; }

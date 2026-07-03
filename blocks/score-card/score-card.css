@@ -1,0 +1,6 @@
+.score-card .score-row { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 0.5rem; padding: 0.5rem; border-bottom: 1px solid #ccc; align-items: center; }
+.score-card .score { font-size: 2.4rem; font-weight: bold; }
+.score-card .sc-great { color: #1a7f37; }
+.score-card .sc-ok { color: #b35900; }
+.score-card .sc-poor { color: #cf222e; }
+.score-card .delta { font-size: 0.9rem; color: #666; }
