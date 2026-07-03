@@ -1,0 +1,92 @@
+.competitor-analysis { display: flex; flex-direction: column; gap: 1rem; margin: 1.5rem 0; }
+
+.ca-card {
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem;
+  background: #fff;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 4%);
+}
+
+.ca-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.ca-feature {
+  font-weight: 700;
+  font-size: 1rem;
+  flex: 1 1 200px;
+}
+
+.ca-badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+.ca-impl {
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.ca-pass { color: #1a7f37; }
+.ca-fail { color: #cf222e; }
+
+.ca-source {
+  font-size: 0.8rem;
+  color: #8a8a8a;
+  margin-bottom: 0.75rem;
+}
+
+.ca-friction {
+  margin: 0.5rem 0;
+  border: 1px solid #f0f0f0;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.ca-friction > summary {
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #555;
+  background: #fafafa;
+  list-style: none;
+  user-select: none;
+}
+
+.ca-friction > summary::after {
+  content: ' ▸';
+  color: #aaa;
+}
+
+.ca-friction[open] > summary::after { content: ' ▾'; }
+
+.ca-friction-body {
+  padding: 0.75rem;
+  font-size: 0.83rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.ca-doc {
+  font-size: 0.8rem;
+  color: #555;
+  margin-top: 0.5rem;
+  border-top: 1px solid #f0f0f0;
+  padding-top: 0.5rem;
+}
+
+.ca-doc a { color: #1268c7; }
