@@ -2,9 +2,9 @@
 
 /* Metric-matched fallbacks to minimize layout shift while Google Fonts loads */
 @font-face {
-  font-family: syne-fallback;
-  size-adjust: 96%;
-  ascent-override: 90%;
+  font-family: epilogue-fallback;
+  size-adjust: 97%;
+  ascent-override: 91%;
   src: local('Arial');
 }
 

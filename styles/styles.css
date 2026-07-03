@@ -21,7 +21,7 @@
 
   /* fonts */
   --body-font-family: manrope, manrope-fallback, sans-serif;
-  --heading-font-family: syne, syne-fallback, sans-serif;
+  --heading-font-family: epilogue, epilogue-fallback, sans-serif;
 
   /* body sizes — fixed rem scale, respects user browser settings */
   --body-font-size-m: 1.125rem;
