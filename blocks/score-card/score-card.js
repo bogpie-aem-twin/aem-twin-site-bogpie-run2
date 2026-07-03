@@ -1,19 +1,18 @@
 export default function decorate(block) {
   const rows = [...block.children];
   block.innerHTML = '';
-  const grid = document.createElement('div');
-  grid.className = 'sc-grid';
   rows.forEach((row) => {
-    const [label, score, delta] = [...row.children].map((c) => c.textContent.trim());
-    const n = parseInt(score, 10);
-    const cls = n >= 90 ? 'sc-great' : n >= 50 ? 'sc-ok' : 'sc-poor';
-    const card = document.createElement('div');
-    card.className = 'sc-item';
-    card.innerHTML = `
-      <div class="sc-label">${label}</div>
-      <div class="sc-score ${cls}">${score}</div>
-      <div class="sc-delta">${delta}</div>`;
-    grid.appendChild(card);
+    const cells = [...row.children];
+    const metric = cells[0]?.textContent.trim() || '';
+    const scoreText = cells[1]?.textContent.trim() || '0';
+    const delta = cells[2]?.textContent.trim() || '';
+    const score = parseFloat(scoreText);
+    let cls = 'sc-poor';
+    if (score >= 90) cls = 'sc-great';
+    else if (score >= 50) cls = 'sc-ok';
+    const div = document.createElement('div');
+    div.className = 'score-row';
+    div.innerHTML = `<span class="metric">${metric}</span><span class="score ${cls}">${scoreText}</span><span class="delta">${delta}</span>`;
+    block.appendChild(div);
   });
-  block.appendChild(grid);
 }

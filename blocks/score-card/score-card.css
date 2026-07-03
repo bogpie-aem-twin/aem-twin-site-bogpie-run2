@@ -1,8 +1,6 @@
-.sc-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
-.sc-item { border: 1px solid #e8e8e8; border-radius: 12px; padding: 1.5rem 1rem; text-align: center; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
-.sc-label { font-size: 0.78rem; font-weight: 700; color: #8a8a8a; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 0.75rem; }
-.sc-score { font-size: 2.4rem; font-weight: 800; line-height: 1; margin-bottom: 0.4rem; }
-.sc-great { color: #1a7f37; }
-.sc-ok { color: #9a6700; }
-.sc-poor { color: #cf222e; }
-.sc-delta { font-size: 0.82rem; color: #8a8a8a; }
+.score-card .score-row { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 0.5rem; padding: 0.5rem; border-bottom: 1px solid #ccc; align-items: center; }
+.score-card .score { font-size: 2.4rem; font-weight: bold; }
+.score-card .sc-great { color: #1a7f37; }
+.score-card .sc-ok { color: #b35900; }
+.score-card .sc-poor { color: #cf222e; }
+.score-card .delta { font-size: 0.9rem; color: #666; }

@@ -1,6 +1,6 @@
-.error-table { border: 1px solid #e8e8e8; border-radius: 10px; overflow: hidden; margin: 1.5rem 0; }
-.et-row { display: grid; grid-template-columns: 130px 1fr 2fr; gap: 0; align-items: start; padding: 14px 16px; border-bottom: 1px solid #f0f0f0; }
-.et-row:last-child { border-bottom: none; }
-.et-badge { display: inline-block; padding: 3px 10px; border-radius: 20px; color: #fff; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.03em; white-space: nowrap; }
-.et-action { font-weight: 600; font-size: 0.9rem; padding: 0 16px; }
-.et-message { font-size: 0.875rem; color: #555; line-height: 1.5; }
+.error-table .error-row { display: grid; grid-template-columns: 1fr 3fr 3fr; gap: 0.75rem; padding: 0.5rem; border-bottom: 1px solid #ccc; }
+.error-table .badge { display: inline-block; padding: 0.2rem 0.6rem; border-radius: 1rem; font-size: 0.8rem; font-weight: bold; color: #fff; white-space: nowrap; }
+.error-table .badge-docs-gap { background: #0969da; }
+.error-table .badge-product-issue { background: #cf222e; }
+.error-table .badge-env-issue { background: #b35900; }
+.error-table .badge-user-error { background: #6639ba; }
