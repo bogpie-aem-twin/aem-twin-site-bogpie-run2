@@ -1,0 +1,16 @@
+{
+  "name": "AEM SiteTwin",
+  "short_name": "SiteTwin",
+  "description": "Autonomous EDS onboarding validation via synthetic customer journey",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#fa0f00",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ]
+}
