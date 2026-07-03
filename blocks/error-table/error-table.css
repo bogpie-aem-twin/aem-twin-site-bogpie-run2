@@ -1,0 +1,6 @@
+.error-table { border: 1px solid #e8e8e8; border-radius: 10px; overflow: hidden; margin: 1.5rem 0; }
+.et-row { display: grid; grid-template-columns: 130px 1fr 2fr; gap: 0; align-items: start; padding: 14px 16px; border-bottom: 1px solid #f0f0f0; }
+.et-row:last-child { border-bottom: none; }
+.et-badge { display: inline-block; padding: 3px 10px; border-radius: 20px; color: #fff; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.03em; white-space: nowrap; }
+.et-action { font-weight: 600; font-size: 0.9rem; padding: 0 16px; }
+.et-message { font-size: 0.875rem; color: #555; line-height: 1.5; }
